@@ -3,7 +3,7 @@
 
 A fish function collections for people who use <a href="http://fishshell.com">Fishshell</a>.
 
-##### Requirements
+#### Requirements
 - ***fish*** shell, version 2.2 or later
 
 
@@ -18,7 +18,7 @@ For example:
 ```fish
 # binding ctrl+g 
 $ bind \cG underbar
-# type command in command line then call it with ctrl+g keys.
+# type command in command line then press ctrl+g then press enter finally to run the command.
 $ echo "foo 
 bar"
 # get whatever from underbar
