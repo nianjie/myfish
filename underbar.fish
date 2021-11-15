@@ -4,12 +4,11 @@ function underbar --description 'gulp every bit you put out into underbar'
   end
 
   set -l process (commandline)
-breakpoint
   if string match -rq -- 'set -g underbar \((?<process>.*)\)' $process
-breakpoint
     commandline -r -- $process
-  else 
-    fish_commandline_prepend 'set -g underbar ('
-    fish_commandline_append ')'
+  else
+    commandline -a ')'
+    commandline -C 0
+    commandline -i 'set -g underbar (' 
   end
 end
