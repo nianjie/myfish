@@ -10,6 +10,6 @@ function underbar --description 'gulp every bit you put out into underbar'
     commandline -a ')'
     commandline -C 0
     commandline -i 'set -g underbar (' 
-    commandline -C 0
+    commandline -C (string length -- (commandline))
   end
 end
