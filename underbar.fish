@@ -1,4 +1,4 @@
-function underbar --description 'gulp every bit you put out into underbar'
+function underbar --description 'gulp every char emitted into belly of underbar'
   if not commandline | string length -q
     commandline -r $history[1]
   end
