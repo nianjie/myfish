@@ -3,7 +3,7 @@ function underbar --description 'gulp every char emitted into belly of underbar'
     commandline -r $history[1]
   end
 
-  set -l process (commandline -p | string collect)
+  set -l process (commandline | string collect)
 breakpoint
 #  if string match -rq -- 'set -g underbar \((?<expanded>.*)\)' $process
 #    commandline -r -- $expanded
