@@ -27,5 +27,5 @@ $ count $underbar
 The best way to bind would be to bind it with function `fish_user_key_bindings`, which usually exists in `~/.config/fish/functions/`.
 
 As the `underbar` simply reads in command substitution, it has a limit on the size of data it can hold.
-> Fish has a default limit of **100 MiB** on the data it will read in a command sustitution.
+> Fish has a default limit of **100 MiB** on the data it will read in a command substitution.
 > This limit can be adjusted with the *fish_read_limit* variable (0 meaning no limit).
