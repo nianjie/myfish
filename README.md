@@ -15,16 +15,16 @@ This function assign the last output into a global variable named `underbar`, si
 Then you can fetch the output from `$underbar` conveniently in the following operations. 
 For example:
 ```fish
-# binding ctrl+g 
-$ bind \cG underbar
-# type command in command line then press ctrl+g then press enter finally to run the command.
+# binding alt+g
+$ bind \eG underbar
+# type command in command line then press alt+g then press enter finally to run the command.
 $ echo "foo 
 bar"
 # get whatever from underbar
 $ count $underbar
 2
 ```
-The best way to bind would be to bind it with function `fish_user_key_bindings`, which usually exists in `~/.config/fish/functions/`.
+The best way would be to custom bind it with function `fish_user_key_bindings`, which usually exists in `~/.config/fish/functions/`.
 
 As the `underbar` simply reads in command substitution, it has a limit on the size of data it can hold.
 > Fish has a default limit of **100 MiB** on the data it will read in a command substitution.
